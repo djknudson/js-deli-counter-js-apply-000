@@ -1,15 +1,13 @@
 // 1. takeANumber
 
 // declare take a number function accepting parameters for the current line and name to be added
-var takeANumber = (currentLine, newName) => {
-	//push newName to end of currentLine array
-	currentLine.push(newName);
-	// declare newPosition variable that is index of new name plus one
-	var newPosition = currentLine.indexOf(newName) + 1;
-	//declare specified welcome message with string literals for name and line position
-	var welcomeMessage = `Welcome, ${newName}. You are number ${newPosition} in line.`;
-	// return message
-	return welcomeMessage;
+var currentCustomer = 0;
+var takeANumber = () => {
+  // return welcome string
+  var newNumber = currentCustomer;
+  currentCustomer +=;
+  var welcomeMessage = "Welcome. You are number ${newNumber} in line.";
+  return welcomeMessage;
 };
 
 // 2. nowServing
